@@ -13,8 +13,9 @@
       </div>
       <div style="display:inline-block;width:50%;">
         <line-chart :dataset="chartDataSet" :labels="chartLabels" @update_city="update_city"></line-chart>
-      </div>
-    </div>    
+      </div>      
+    </div>  
+    <bar-chart-d3></bar-chart-d3>      
   </div>
 </template>
 
@@ -22,6 +23,8 @@
 import axios from 'axios'
 import BarChart from '@/components/BarChart.vue'
 import LineChart from '@/components/LineChart.vue'
+import BarChartD3 from '@/components/BarChartD3.vue'
+
 export default {
   name: 'App',
   data(){
@@ -33,6 +36,7 @@ export default {
   components: {
     BarChart,
     LineChart,
+    BarChartD3,
   },
   methods:{
     update_city(city){
@@ -53,8 +57,8 @@ export default {
     },
   },
   created(){    
-    this.update_city('seoul');
-  }  
+    this.update_city('seoul');    
+  }, 
 }
 </script>
 
