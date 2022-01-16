@@ -1,4 +1,5 @@
-# chart-lib [deploy site](https://condescending-booth-61f9ef.netlify.com)
+# chart-lib 
+[https://chartuv.netlify.app](https://chartuv.netlify.app)
 
 ## Project setup
 ```
